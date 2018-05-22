@@ -1,0 +1,21 @@
+@mixin vendor($property, $value...){
+    -webkit-#{$property}: #{$value};
+    -moz-#{$property}: #{$value};
+    -ms-#{$property}: #{$value};
+    #{$property}: #{$value};
+}
+
+@mixin hocus(){
+    &:hover, &:focus{
+        @content;
+    }
+}
+
+@mixin stagger-anim-delay($i, $initial-delay, $stagger-delay) {
+  @while $i > 0 {
+    &:nth-of-type(#{$i}) {
+      animation-delay: $initial-delay + $stagger-delay * $i;
+    }
+    $i: $i - 1;
+  }
+}

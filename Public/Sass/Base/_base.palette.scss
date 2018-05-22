@@ -1,0 +1,41 @@
+//#33485F, #525d68, #1ba49c, #2a3b4e, #f5f6f7
+//Color Palette
+$color_light: #f5f6f7; 
+$color_teal_light: #06BC9B;
+$color_teal: #1ba49c; 
+$color_footer_light: #33485F; 
+$color_footer_dark: #2a3b4e;
+$color_gray: rgb(33,37,41);
+$color_font: #525d68; 
+
+.white{
+    color: #FFF !important;
+}
+
+.font-color{
+    color: $color_font;
+}
+
+.gray-text{
+    color: $color_gray;
+}
+
+.dark-text{
+    color: $color_footer_dark;
+}
+
+.teal-light{
+    background: $color_teal_light;
+}
+
+.teal{
+    background: $color_teal;
+}
+
+.teal-light-text{
+    color: $color_teal_light;
+}
+
+.teal-text{
+    color: $color_teal;
+}

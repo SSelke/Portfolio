@@ -1,0 +1,76 @@
+@import "_base.settings";
+@import "_base.fonts";
+@import "_base.palette";
+@import "_base.theme";
+@import "_base.mixins";
+@import "_base.icons";
+
+html {
+    height: 100%;
+}
+
+body{
+
+    height: 100%;
+    //set line heights
+    line-height: $base-line-height;
+
+    //set font weight
+    font-weight: $font-weight-normal;
+
+    //set base margin
+    margin: 0;
+
+    //set Base padding
+    padding: 0;
+
+    z-index: 3;
+}
+
+section,footer,aside{
+    margin: 0 $spacing-normal;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    //set heading font weights
+    font-weight: $font-weight-heading;
+    text-align: center;
+}
+
+p{ 
+    margin: $spacing-normal;
+    text-align: center;
+    font-size: $font-large;
+ }
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+//set heading sizes
+h1{ font-size: $header-size-1; }
+h2{ font-size: $header-size-2; }
+h3{ font-size: $header-size-3; }
+h4{ font-size: $header-size-4; }
+h5{ font-size: $header-size-5; }
+h6{ font-size: $header-size-6; }
+
+//keyframes
+@keyframes pull-left{
+   0% {
+    // transform: translateX(-10%);
+    opacity: 0;
+  }
+  100% {
+    // transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

@@ -1,0 +1,117 @@
+@import "base.mixins";
+@import "base.palette";
+
+html, body{
+    // background: #FFF url("../../images/background.png") repeat;
+    background: #FFF;
+}
+
+body{
+    height: 100%;
+    margin: 0 auto; 
+}
+
+a{
+    color: $color_font;
+
+    font-weight: $font-weight-light;
+
+    @include hocus(){
+        color: $color_teal_light;
+        text-decoration: none !important;
+    }
+}
+
+.navbar{
+    background: $color_gray !important;
+}
+
+.navbar-nav{
+    padding-left: 200px !important;
+
+    @media screen and (max-width: 990px) {
+        padding-left: 0 !important;
+    }
+}
+
+.nav-link{
+    @media screen and (max-width: 990px) {
+        color: #fff !important;
+    }
+}
+
+.jumbotron{
+    border-radius: 15px !important;
+    width: 100%;
+}
+
+.title-container{
+    transform: translateY(-40px);
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+.inline{
+    display: inline;
+}
+.inline-block{
+    display: inline-block;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.white-text{
+    color: #fff !important;
+}
+
+.rounded{
+    border-radius: 20px;
+}
+
+.facebook{
+    background: #3664a2;
+}
+
+.linkedin{
+    background: #0077b5;
+}
+
+.instagram{
+    background: #fb3958;
+}
+
+.github{
+    background: #333;
+}
+
+.twitch{
+    background: #6441a5;
+}
+
+.head-container{
+    position: relative;
+    margin-top: 130px;
+}
+
+.page-header{
+    margin-top: $spacing-largest;
+    font-size: $font-largest;
+    opacity: 1;
+    animation: 0.65s pull-left ease-in;
+}
+
+.page-header-line{
+    width: 100px;
+    height: 5px;
+    background: $color_footer_dark;
+    margin: 10px auto 80px auto;
+    animation: 0.65s pull-left ease-in;
+}    

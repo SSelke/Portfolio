@@ -1,0 +1,14 @@
+@import "header_footer";
+
+
+.contact-container{
+    margin: 50px auto 100px auto !important;
+
+    & > h1{
+        margin: 50px auto;
+    }
+}
+
+.form-container{
+    margin: auto;
+}

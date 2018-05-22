@@ -1,0 +1,48 @@
+@import "../Base/base"; 
+
+// header{
+//     padding-top: 40px;
+
+//     @media (max-width: 990px){
+//         padding-top: 0px !important;
+//     }
+// }
+
+// nav{
+//     margin-right: 5%;
+
+//     @media (max-width: 990px){
+//         margin-right: 0px !important;
+//     }
+// }
+
+// .header-bar{
+//     position: relative;
+//     margin: 0 auto;
+//     display: block;
+
+//     > li{
+//         position: relative;
+//         display: inline-block;
+//         text-align: center;
+//         margin: 0 auto;
+//         width: 80px;
+//     }
+// }
+
+//CUT THIS ^^^
+
+nav{
+    border-bottom: 3px solid $color_teal;
+}
+
+h1{
+    margin: $spacing-largest;
+
+    @media screen and (max-width: 990px) {
+        ::before{
+            content: "Hi, my name is Scott. I am a Full-Stack Web Developer";
+        }
+        margin: $spacing-normal;
+    }
+}

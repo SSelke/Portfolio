@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.white {
+  color: #FFF !important;
+}
+
+.font-color {
+  color: #525d68;
+}
+
+.gray-text {
+  color: #212529;
+}
+
+.dark-text {
+  color: #2a3b4e;
+}
+
+.teal-light {
+  background: #06BC9B;
+}
+
+.teal {
+  background: #1ba49c;
+}
+
+.teal-light-text {
+  color: #06BC9B;
+}
+
+.teal-text {
+  color: #1ba49c;
+}
+
+.white {
+  color: #FFF !important;
+}
+
+.font-color {
+  color: #525d68;
+}
+
+.gray-text {
+  color: #212529;
+}
+
+.dark-text {
+  color: #2a3b4e;
+}
+
+.teal-light {
+  background: #06BC9B;
+}
+
+.teal {
+  background: #1ba49c;
+}
+
+.teal-light-text {
+  color: #06BC9B;
+}
+
+.teal-text {
+  color: #1ba49c;
+}
+
+html, body {
+  background: #FFF;
+}
+
+body {
+  height: 100%;
+  margin: 0 auto;
+}
+
+a {
+  color: #525d68;
+  font-weight: 300;
+}
+a:hover, a:focus {
+  color: #06BC9B;
+  text-decoration: none !important;
+}
+
+.navbar {
+  background: #212529 !important;
+}
+
+.navbar-nav {
+  padding-left: 200px !important;
+}
+@media screen and (max-width: 990px) {
+  .navbar-nav {
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .nav-link {
+    color: #fff !important;
+  }
+}
+
+.jumbotron {
+  border-radius: 15px !important;
+  width: 100%;
+}
+
+.title-container {
+  transform: translateY(-40px);
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.white-text {
+  color: #fff !important;
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+.facebook {
+  background: #3664a2;
+}
+
+.linkedin {
+  background: #0077b5;
+}
+
+.instagram {
+  background: #fb3958;
+}
+
+.github {
+  background: #333;
+}
+
+.twitch {
+  background: #6441a5;
+}
+
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  margin: 8px auto 5px auto;
+  margin-left: 15px;
+  margin-right: auto;
+  border: none !important;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #FFF;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+  top: 12px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 24px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#comment_bubble {
+  width: 140px;
+  height: 100px;
+  background: #1ba49c;
+  margin: 24px auto;
+  position: relative;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+}
+
+#comment_bubble:before {
+  content: "";
+  width: 0;
+  height: 0;
+  right: 100%;
+  top: 38px;
+  position: absolute;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #1ba49c;
+  border-bottom: 13px solid transparent;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+}
+
+section, footer, aside {
+  margin: 0 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  margin: 24px;
+  text-align: center;
+  font-size: 19.2px;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 21.6px;
+}
+
+h4 {
+  font-size: 19.2px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14.4px;
+}
+
+.head-container {
+  position: relative;
+  margin-top: 130px;
+}
+
+#particles-js {
+  position: fixed;
+  top: 59px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#particles canvas {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+}
+
+.page-header {
+  margin-top: 72px;
+  font-size: 48px;
+  opacity: 1;
+  animation: 0.65s pull-left ease-in;
+}
+
+.page-header-line {
+  width: 100px;
+  height: 5px;
+  background: #2a3b4e;
+  margin: 10px auto 80px auto;
+  animation: 0.65s pull-left ease-in;
+}
+
+@keyframes pull-left {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+nav {
+  border-bottom: 3px solid #1ba49c;
+}
+
+h1 {
+  margin: 72px;
+}
+@media screen and (max-width: 990px) {
+  h1 {
+    margin: 24px;
+  }
+  h1 ::before {
+    content: "Hi, my name is Scott. I am a Full-Stack Web Developer";
+  }
+}
+
+.height {
+  height: 180px;
+  bottom: 0;
+}
+
+.dark-blue {
+  background: #2a3b4e !important;
+}
+
+.blue {
+  background: #33485F !important;
+}
+
+.gray {
+  background: #252a30 !important;
+}
+
+.social-container {
+  margin: 0 auto;
+  margin-top: 24px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 10px;
+  transition: all 0.2s ease-in-out;
+}
+.social:hover {
+  transform: scale(1.2);
+  background-color: #1ba49c;
+}
+
+i {
+  font-weight: 300;
+  color: #FFF;
+  margin-top: 10px;
+}
+
+.footer-text {
+  color: #525d68 !important;
+  margin: 24px auto 16px auto;
+}
+
+.center {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*# sourceMappingURL=../Assets/css/main.css.map */
