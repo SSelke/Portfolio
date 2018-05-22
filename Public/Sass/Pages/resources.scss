@@ -7,11 +7,11 @@
 
 //Demo
 .skills {
-  width: 400px;
-  max-width: 960px;
+  width: 100%;
+  max-width: 400px;
   height: 750px;
   margin: $spacing-normal auto;
-
+  box-sizing: border-box;
   position: relative;
 
 }
