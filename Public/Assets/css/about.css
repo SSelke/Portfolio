@@ -361,9 +361,10 @@ h1 {
   }
 }
 
-.height {
-  height: 180px;
-  bottom: 0;
+@media screen and (max-width: 500px) {
+  .footer-break {
+    font-size: 16px;
+  }
 }
 
 .dark-blue {
@@ -421,15 +422,20 @@ i {
 
 .image-container {
   margin: 0 auto 24px auto;
-  height: 400px;
-  width: 400px;
-  background: url("../../images/me.jpeg") no-repeat;
-  background-size: 400px 400px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.responsive-image {
+  height: auto;
+  width: 100%;
+  max-height: 400px;
+  max-width: 400px;
 }
 
 .wrapper {
   max-width: 535px;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 50px auto;
 }
 .wrapper > p {
   text-align: justify;
@@ -441,6 +447,7 @@ i {
   margin: 20px auto 0 auto;
 }
 .wrapper > a > button {
+  margin: 25px auto;
   width: 50%;
 }
 
