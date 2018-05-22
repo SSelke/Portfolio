@@ -161,6 +161,21 @@ a:hover, a:focus {
   background: #6441a5;
 }
 
+.page-header {
+  margin-top: 72px;
+  font-size: 48px;
+  opacity: 1;
+  animation: 0.65s pull-left ease-in;
+}
+
+.page-header-line {
+  width: 100px;
+  height: 5px;
+  background: #2a3b4e;
+  margin: 10px auto 80px auto;
+  animation: 0.65s pull-left ease-in;
+}
+
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
   width: 40px;
   height: 30px;
@@ -270,7 +285,6 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  z-index: 3;
 }
 
 section, footer, aside {
@@ -315,42 +329,6 @@ h5 {
 
 h6 {
   font-size: 14.4px;
-}
-
-.head-container {
-  position: relative;
-  margin-top: 130px;
-}
-
-#particles-js {
-  position: fixed;
-  top: 59px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-}
-
-#particles canvas {
-  position: absolute;
-  width: 100%;
-  height: 500px;
-  z-index: -1;
-}
-
-.page-header {
-  margin-top: 72px;
-  font-size: 48px;
-  opacity: 1;
-  animation: 0.65s pull-left ease-in;
-}
-
-.page-header-line {
-  width: 100px;
-  height: 5px;
-  background: #2a3b4e;
-  margin: 10px auto 80px auto;
-  animation: 0.65s pull-left ease-in;
 }
 
 @keyframes pull-left {
@@ -439,17 +417,6 @@ i {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-}
-
-.page-header-about {
-  margin-top: 72px;
-  font-size: 48px;
-}
-
-.page-header-line-about {
-  width: 100px;
-  height: 5px;
-  background: #2a3b4e;
 }
 
 .image-container {
