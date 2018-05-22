@@ -9,7 +9,7 @@ var app = express();
 
 mongoose.connect("mongodb://admin:!1Mlab!1@ds119930.mlab.com:19930/portfolio_scott");
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/Public"));
 app.use(methodOverride("_method"));
 app.use(flash());
 app.use(require("express-session")({
@@ -96,6 +96,6 @@ app.post('/contact', function(req, res){
 
 //
 
-app.listen(27017 || process.env.PORT, function(){
+app.listen(27017 || process.env.PORT, process.env.IP, function(){
     console.log("Server started...");
 })
