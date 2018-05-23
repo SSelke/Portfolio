@@ -645,11 +645,11 @@ i {
 }
 
 .html-picture {
-  background: url("../../images/HTML5.png");
+  background: url("../../images/HTML5-min.png");
 }
 
 .css-picture {
-  background: url("../../images/CSS3.png");
+  background: url("../../images/CSS3-min.png");
   background-size: 150px 200px;
   width: 150px;
 }
@@ -661,20 +661,20 @@ i {
 }
 
 .javascript-picture {
-  background: url("../../images/JS.png");
+  background: url("../../images/JS-min.png");
   background-size: 200px 200px;
   width: 200px;
 }
 
 .angular-picture {
-  background: url("../../images/angular.png");
+  background: url("../../images/angular-min.png");
   background-size: 300px 250px;
   width: 300px;
   height: 250px;
 }
 
 .react-picture {
-  background: url("../../images/react.png");
+  background: url("../../images/react-min.png");
   background-size: 200px 200px;
   width: 200px;
 }
@@ -686,19 +686,19 @@ i {
 }
 
 .node-picture {
-  background: url("../../images/node.png");
+  background: url("../../images/node-min.png");
   background-size: 320px 200px;
   width: 320px;
 }
 
 .php-picture {
-  background: url("../../images/php.png");
+  background: url("../../images/php-min.png");
   background-size: 200px 200px;
   width: 200px;
 }
 
 .mongo-picture {
-  background: url("../../images/mongo.png");
+  background: url("../../images/mongo-min.png");
   background-size: 200px 200px;
   width: 200px;
 }
@@ -710,33 +710,33 @@ i {
 }
 
 .github-picture {
-  background: url("../../images/github.png");
+  background: url("../../images/github-min.png");
   background-size: 200px 200px;
   width: 200px;
 }
 
 .ms-picture {
-  background: url("../../images/ms-office.png");
+  background: url("../../images/ms-office-min.png");
   background-size: 350px 200px;
   width: 350px;
 }
 
 .photoshop-picture {
-  background: url("../../images/ps.png");
+  background: url("../../images/ps-min.png");
   background-size: 200px 200px;
   width: 200px;
 }
 
 .illustrator-picture {
-  background: url("../../images/illustraitor.png");
+  background: url("../../images/illustraitor-min.png");
   background-size: 200px 200px;
   width: 200px;
 }
 
 .ux-picture {
-  background: url("../../images/ux.png");
+  background: url("../../images/ux-min.png");
   background-size: 200px 200px;
   width: 200px;
 }
 
-/*# sourceMappingURL=../Assets/css/resources.css.map */
+/*# sourceMappingURL=../../Assets/css/resources.css.map */

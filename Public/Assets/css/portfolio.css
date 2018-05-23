@@ -420,4 +420,24 @@ i {
   text-align: center;
 }
 
-/*# sourceMappingURL=../Assets/css/portfolio.css.map */
+.card {
+  height: 300px;
+  width: 356px;
+  background: blue !important;
+  border-radius: 0px !important;
+}
+
+.card-col {
+  height: 300px;
+  width: 356px !important;
+  margin: 0;
+  padding: 0 !important;
+}
+
+.card-row {
+  margin: 0;
+  padding: 0;
+  width: 712px !important;
+}
+
+/*# sourceMappingURL=../../Assets/css/portfolio.css.map */
