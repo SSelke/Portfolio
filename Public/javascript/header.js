@@ -39,22 +39,22 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    $('.chart__bar').click(function () {
-        var option = $(this).attr('id');
-        $('.charts').find(".click--me").removeClass('click--me');
-        $('.desc').find(".visible").fadeOut("500", function(){
-            $(this).removeClass('visible').addClass('hidden');
-            $('.desc').find("." + option).fadeIn("500", function(){
-                $(this).addClass("visible").removeClass("hidden");
-            })
-        })
-    })
-});
+// $(document).ready(function () {
+//     $('.chart__bar').click(function () {
+//         var option = $(this).attr('id');
+//         $('.charts').find(".click--me").removeClass('click--me');
+//         $('.desc').find(".visible").fadeOut("500", function(){
+//             $(this).removeClass('visible').addClass('hidden');
+//             $('.desc').find("." + option).fadeIn("500", function(){
+//                 $(this).addClass("visible").removeClass("hidden");
+//             })
+//         })
+//     })
+// });
 
 $(document).ready(function () {
     // Add smooth scrolling to all links
-    $(".chart__bar a, a.go-up").on('click', function (event) {
+    $(".chart__bar a").on('click', function (event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {

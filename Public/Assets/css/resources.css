@@ -76,6 +76,12 @@ body {
   margin: 0 auto;
 }
 
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 a {
   color: #525d68;
   font-weight: 300;
@@ -174,6 +180,12 @@ a:hover, a:focus {
   background: #2a3b4e;
   margin: 10px auto 80px auto;
   animation: 0.65s pull-left ease-in;
+}
+
+#body {
+  padding: 10px;
+  padding-bottom: 180px;
+  /* Height of the footer */
 }
 
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
@@ -275,11 +287,50 @@ a:hover, a:focus {
   border-bottom: 13px solid transparent;
 }
 
+#bubble {
+  width: 200px;
+  height: 100px;
+  background: #1ba49c;
+  margin: 24px auto;
+  position: relative;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+}
+
+.hexagon {
+  position: relative;
+  width: 300px;
+  height: 173.21px;
+  background-color: #1ba49c;
+  margin: 86.6px auto;
+}
+.hexagon:before, .hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 86.6px solid #1ba49c;
+}
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 86.6px solid #1ba49c;
+}
+
 html {
   height: 100%;
+  min-height: 100% !important;
 }
 
 body {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100%;
   height: 100%;
   line-height: 24px;
   font-weight: 400;
@@ -359,6 +410,10 @@ h1 {
   h1 ::before {
     content: "Hi, my name is Scott. I am a Full-Stack Web Developer";
   }
+}
+
+#push {
+  height: 180px;
 }
 
 @media screen and (max-width: 500px) {
@@ -515,10 +570,6 @@ i {
   background-position: 100% 0;
   animation: 1s anim-lightspeed-in ease forwards;
 }
-.chart__bar:hover, .chart__bar:focus {
-  cursor: pointer;
-  background: linear-gradient(to left, #3cd3ad, #3cd3ad);
-}
 .chart--dev .chart__bar:nth-of-type(11) {
   animation-delay: 2.7s;
 }
@@ -592,18 +643,23 @@ i {
     opacity: 1;
   }
 }
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
+@keyframes light {
+  0% {
+    color: white;
   }
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
+  50% {
+    color: yellow;
   }
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
+}
+@keyframes flame {
+  0% {
+    opacity: 0;
   }
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .resource-icon {
@@ -612,6 +668,14 @@ i {
   font-size: 60px;
   left: 45px;
   padding-top: 10px;
+}
+
+.light {
+  animation: 2s light ease-in-out infinite;
+}
+
+.flame {
+  animation: 2s flame 300ms ease-in-out infinite;
 }
 
 .resource-icon-two {
@@ -624,8 +688,20 @@ i {
 
 .resource-icon-shuttle {
   left: 30px;
-  padding-top: 8px;
+  padding-top: 4px;
   transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.resource-icon-fire {
+  color: red;
+  font-size: 35px;
+  transform: translate(-105px, 35px) rotate(-140deg);
+}
+
+.resource-icon-toolbox {
+  color: white;
+  font-size: 150px;
 }
 
 .resource-picture {
@@ -644,99 +720,4 @@ i {
   }
 }
 
-.html-picture {
-  background: url("../../images/HTML5-min.png");
-}
-
-.css-picture {
-  background: url("../../images/CSS3-min.png");
-  background-size: 150px 200px;
-  width: 150px;
-}
-
-.sass-picture {
-  background: url("../../images/sass.svg");
-  background-size: 150px 200px;
-  width: 150px;
-}
-
-.javascript-picture {
-  background: url("../../images/JS-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.angular-picture {
-  background: url("../../images/angular-min.png");
-  background-size: 300px 250px;
-  width: 300px;
-  height: 250px;
-}
-
-.react-picture {
-  background: url("../../images/react-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.jquery-picture {
-  background: url("../../images/jquery.gif");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.node-picture {
-  background: url("../../images/node-min.png");
-  background-size: 320px 200px;
-  width: 320px;
-}
-
-.php-picture {
-  background: url("../../images/php-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.mongo-picture {
-  background: url("../../images/mongo-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.mysql-picture {
-  background: url("../../images/mysql.svg");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.github-picture {
-  background: url("../../images/github-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.ms-picture {
-  background: url("../../images/ms-office-min.png");
-  background-size: 350px 200px;
-  width: 350px;
-}
-
-.photoshop-picture {
-  background: url("../../images/ps-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.illustrator-picture {
-  background: url("../../images/illustraitor-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.ux-picture {
-  background: url("../../images/ux-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-/*# sourceMappingURL=../../Assets/css/resources.css.map */
+/*# sourceMappingURL=../Assets/css/resources.css.map */

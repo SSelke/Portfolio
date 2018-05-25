@@ -11,6 +11,12 @@ body{
     margin: 0 auto; 
 }
 
+.site-wrapper{
+    display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 a{
     color: $color_font;
 
@@ -109,4 +115,9 @@ a{
     background: $color_footer_dark;
     margin: 10px auto 80px auto;
     animation: 0.65s pull-left ease-in;
-}    
+}   
+
+#body {
+   padding:10px;
+   padding-bottom:180px;   /* Height of the footer */
+}

@@ -109,10 +109,6 @@
 
   animation: 1s anim-lightspeed-in ease forwards;
 
-     @include hocus(){
-        cursor: pointer;
-        background: linear-gradient(to left, #3cd3ad, #3cd3ad);
-    }
 
   .chart--dev & {
     @include stagger-anim-delay(11, 0.5s, 0.2s);
@@ -152,22 +148,44 @@
   }
 }
 
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
+// @keyframes shake {
+//   10%, 90% {
+//     transform: translate3d(-1px, 0, 0);
+//   }
   
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
+//   20%, 80% {
+//     transform: translate3d(2px, 0, 0);
+//   }
+
+//   30%, 50%, 70% {
+//     transform: translate3d(-4px, 0, 0);
+//   }
+
+//   40%, 60% {
+//     transform: translate3d(4px, 0, 0);
+//   }
+// }
+
+@keyframes light{
+  0%{
+    color: white;
   }
 
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
+  50%{
+    color: yellow;
   }
+}
 
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
+@keyframes flame{
+  0%{
+    opacity: 0;
   }
+  50%{
+     opacity: 1;
+   }
+   100%{
+     opacity: 0;
+   }
 }
 
 //Resource styles & Images
@@ -179,6 +197,15 @@
   left: 45px;
   padding-top: 10px; 
 }
+
+.light{
+  animation: 2s light ease-in-out infinite;
+}
+
+.flame{
+  animation: 2s flame 300ms ease-in-out infinite;
+}
+
 .resource-icon-two{
   left: 15px;
 }
@@ -187,8 +214,20 @@
 }
 .resource-icon-shuttle{
   left: 30px;
-  padding-top: 8px;
+  padding-top: 4px;
   transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.resource-icon-fire{
+  color: red;
+  font-size: 35px;
+  transform: translate(-105px, 35px) rotate( -140deg );
+}
+
+.resource-icon-toolbox{
+  color: white;
+  font-size: 150px;
 }
 
 .resource-picture{
@@ -197,6 +236,7 @@
   height: 200px;
   margin: 0 auto;
 }
+
 //Description Container
 .desc{
   margin: 150px auto 40px auto;
@@ -204,100 +244,5 @@
   @media screen and (max-width: 990px) {
     margin-top: 80px;
   }
-}
-
-.html-picture{
-  background: url("../../images/HTML5-min.png");
-}
-
-.css-picture{
-  background: url("../../images/CSS3-min.png");
-  background-size: 150px 200px;
-  width: 150px;
-}
-
-.sass-picture{
-  background: url("../../images/sass.svg");
-  background-size: 150px 200px;
-  width: 150px;
-}
-
-.javascript-picture{
-  background: url("../../images/JS-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.angular-picture{
-  background: url("../../images/angular-min.png");
-  background-size: 300px 250px;
-  width: 300px;
-  height: 250px;
-}
-
-.react-picture{
-  background: url("../../images/react-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.jquery-picture{
-  background: url("../../images/jquery.gif");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.node-picture{
-  background: url("../../images/node-min.png");
-  background-size: 320px 200px;
-  width: 320px;
-}
-
-.php-picture{
-  background: url("../../images/php-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.mongo-picture{
-  background: url("../../images/mongo-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.mysql-picture{
-  background: url("../../images/mysql.svg");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.github-picture{
-  background: url("../../images/github-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.ms-picture{
-  background: url("../../images/ms-office-min.png");
-  background-size: 350px 200px;
-  width: 350px;
-}
-
-.photoshop-picture{
-  background: url("../../images/ps-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.illustrator-picture{
-  background: url("../../images/illustraitor-min.png");
-  background-size: 200px 200px;
-  width: 200px;
-}
-
-.ux-picture{
-  background: url("../../images/ux-min.png");
-  background-size: 200px 200px;
-  width: 200px;
 }
 
