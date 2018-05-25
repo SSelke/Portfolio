@@ -1,21 +1,24 @@
 @import "header_footer";
 
-.card{
-    height: 300px;
-    width: 356px;
-    background: blue !important;
-    border-radius: 0px !important;
-}
+.grid{
+  margin: 20px auto;
+  background-color:#fff;
+  width: 100%;
+  height: 100%;
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 300px));;
+  grid-template-rows: repeat(auto-fill, minmax(50px, 300px));;
+  grid-row: auto auto;
+  .box{
+    background-color:#333;
+    padding:20px;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    font-family:sans-serif;
+    position: relative;
+  }
 
-.card-col{
-    height: 300px;
-    width: 356px !important;
-    margin: 0;
-    padding: 0 !important;
-}
-
-.card-row{
-    margin: 0;
-    padding: 0;
-    width: 712px !important;
 }

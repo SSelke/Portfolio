@@ -168,7 +168,7 @@ a:hover, a:focus {
 }
 
 .page-header {
-  margin-top: 72px;
+  margin-top: 24px;
   font-size: 48px;
   opacity: 1;
   animation: 0.65s pull-left ease-in;
@@ -178,14 +178,13 @@ a:hover, a:focus {
   width: 100px;
   height: 5px;
   background: #2a3b4e;
-  margin: 10px auto 80px auto;
+  margin: 10px auto;
   animation: 0.65s pull-left ease-in;
 }
 
-#body {
-  padding: 10px;
-  padding-bottom: 180px;
-  /* Height of the footer */
+.head-container {
+  height: 100%;
+  margin-bottom: 15px;
 }
 
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {

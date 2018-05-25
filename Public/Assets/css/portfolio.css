@@ -168,7 +168,7 @@ a:hover, a:focus {
 }
 
 .page-header {
-  margin-top: 72px;
+  margin-top: 24px;
   font-size: 48px;
   opacity: 1;
   animation: 0.65s pull-left ease-in;
@@ -178,14 +178,13 @@ a:hover, a:focus {
   width: 100px;
   height: 5px;
   background: #2a3b4e;
-  margin: 10px auto 80px auto;
+  margin: 10px auto;
   animation: 0.65s pull-left ease-in;
 }
 
-#body {
-  padding: 10px;
-  padding-bottom: 180px;
-  /* Height of the footer */
+.head-container {
+  height: 100%;
+  margin-bottom: 15px;
 }
 
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
@@ -475,24 +474,26 @@ i {
   text-align: center;
 }
 
-.card {
-  height: 300px;
-  width: 356px;
-  background: blue !important;
-  border-radius: 0px !important;
+.grid {
+  margin: 20px auto;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 300px));
+  grid-template-rows: repeat(auto-fill, minmax(50px, 300px));
+  grid-row: auto auto;
 }
-
-.card-col {
-  height: 300px;
-  width: 356px !important;
-  margin: 0;
-  padding: 0 !important;
-}
-
-.card-row {
-  margin: 0;
-  padding: 0;
-  width: 712px !important;
+.grid .box {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-family: sans-serif;
+  position: relative;
 }
 
 /*# sourceMappingURL=../Assets/css/portfolio.css.map */

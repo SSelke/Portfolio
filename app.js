@@ -64,8 +64,8 @@ app.post('/contact', function(req, res){
         service: 'gmail',
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'inquery.selke@gmail.com', // generated ethereal user
-            pass: 'sselke123'  // generated ethereal password
+            user: 'inquery.selke@gmail.com' || process.env.USERNAME, // generated ethereal user
+            pass: 'sselke123' || process.env.password  // generated ethereal password
         },
         tls: {
             rejectUnauthorized: false
