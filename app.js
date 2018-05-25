@@ -65,7 +65,7 @@ app.post('/contact', function(req, res){
         secure: false, // true for 465, false for other ports
         auth: {
             user:  process.env.USERNAME, // generated ethereal user
-            pass:  process.env.password  // generated ethereal password
+            pass:  process.env.PASSWORD  // generated ethereal password
         },
         tls: {
             rejectUnauthorized: false
