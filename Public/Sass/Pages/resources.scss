@@ -218,3 +218,9 @@
     margin-top: 80px;
   }
 }
+
+.content{
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
+}
