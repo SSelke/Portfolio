@@ -1,21 +1,12 @@
+//Nav Hamburger Animation
 $(document).ready(function () {
     $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
         $(this).toggleClass('open');
     });
 });
 
-var windowWidth = $(window).width();
-if (windowWidth < 992) {
-    $("hr.hidden").addClass("visible");
-    $("div.hidden").addClass("visible");
-    $("div.hidden").removeClass("hidden");
-}
-else {
-    $("div.hidden").removeClass("visible");
-    $("hr.visible").addClass("hidden");
-    $("div.visible").addClass("hidden");
-}
- 
+
+//Additional styling on collapsed navbar 
 $(window).resize(function () {
     var windowWidth = $(window).width();
     if (windowWidth < 992) {
@@ -38,19 +29,6 @@ $(document).ready(function () {
         }
     });
 });
-
-// $(document).ready(function () {
-//     $('.chart__bar').click(function () {
-//         var option = $(this).attr('id');
-//         $('.charts').find(".click--me").removeClass('click--me');
-//         $('.desc').find(".visible").fadeOut("500", function(){
-//             $(this).removeClass('visible').addClass('hidden');
-//             $('.desc').find("." + option).fadeIn("500", function(){
-//                 $(this).addClass("visible").removeClass("hidden");
-//             })
-//         })
-//     })
-// });
 
 $(document).ready(function () {
     // Add smooth scrolling to all links

@@ -1,24 +1,15 @@
 @import "header_footer";
 
-.grid{
-  margin: 20px auto;
-  background-color:#fff;
-  width: 100%;
-  height: 100%;
-  display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(50px, 300px));;
-  grid-template-rows: repeat(auto-fill, minmax(50px, 300px));;
-  grid-row: auto auto;
-  .box{
-    background-color:#333;
-    padding:20px;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
-    font-family:sans-serif;
-    position: relative;
-  }
+.card{
+    margin: 20px auto;
 
+    & > a:hover{
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    & > a{
+        color: #FFF;
+    }
 }
+
