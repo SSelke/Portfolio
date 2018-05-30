@@ -321,6 +321,11 @@ a:hover, a:focus {
   border-top: 86.6px solid #1ba49c;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
   height: 100%;
   min-height: 100% !important;
@@ -472,6 +477,40 @@ i {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+
+.intro {
+  margin: 30px auto 30px auto;
+  justify-content: left;
+  max-width: 1000px;
+}
+
+.picture {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 450px;
+}
+
+.info {
+  margin: 40px auto;
+}
+.info > h6 {
+  text-align: left;
+  justify-content: left;
+  color: #1ba49c;
+}
+.info > p {
+  text-align: left;
+  justify-content: left;
+}
+
+button > a {
+  color: #fff !important;
+}
+button > a:hover {
+  color: #fff !important;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=../Assets/css/main.css.map */

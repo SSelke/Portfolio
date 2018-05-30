@@ -1,1 +1,40 @@
 @import "header_footer";
+
+.intro{
+    margin: 30px auto 30px auto; 
+    justify-content: left;
+    max-width: 1000px;
+}
+
+
+.picture{
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 450px;
+}
+
+.info{
+    margin: 40px auto;
+
+    & > h6{
+        text-align: left;
+        justify-content: left;
+        color: $color_teal;
+    }
+    & > p{
+        text-align: left;
+        justify-content: left;  
+    }
+}
+
+button{
+    & > a{
+        color: #fff !important;
+    }
+    & > a:hover{
+        color: #fff !important;
+        text-decoration: none;
+    }
+
+}
