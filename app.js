@@ -7,7 +7,7 @@ var express = require("express"),
 
 var app = express();
 
-mongoose.connect("mongodb://admin:!1Mlab!1@ds119930.mlab.com:19930/portfolio_scott");
+mongoose.connect(process.env.DATABASEURL);
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/Public"));
 app.use(methodOverride("_method"));
