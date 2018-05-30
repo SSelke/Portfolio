@@ -46,7 +46,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     // Add smooth scrolling to all links
-    $(".chart__bar a").on('click', function (event) {
+    $(".chart__bar a, a.go-up").on('click', function (event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
