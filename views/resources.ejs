@@ -2,6 +2,16 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120089347-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120089347-1');
+    </script>
+
     <link rel="stylesheet" href="/Assets/css/resources.css">
 
 <% include partials/header %>
@@ -23,7 +33,7 @@
                     </div>
                 </div>
                 <h2 style="margin-top: 130px;">My Developer Tool-box</h2>
-                <p>
+                <p class="left-justify">
                     Everyday I am always learning about new Technologies that better improve my sites and development process.
                     As a developer, I have many tools under my belt that enable me to create responsive and functional websites.
                     For most projects I use Code Virtual Studio as my go-to IDE, and for bigger projects or collabs I use Cloud 9 
@@ -138,6 +148,11 @@
                                         Git + Github
                                     </span>
                                 </li>
+                                <li class="chart__bar" id="ga" style="width: 50%;">
+                                    <span class="chart__label white">
+                                        Google Analytics
+                                    </span>
+                                </li>
                                 <li class="chart__bar" id="ms" style="width: 70%;">
                                     <span class="chart__label white">
                                         Microsoft Office
@@ -209,6 +224,55 @@
             <p id="description">
                 Front-end and Back-end designed to co-operate with each other perfectly.
             </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3 style="margin: 40px auto;">Other Important Skills</h3>
+
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab"
+                    aria-controls="home">Analytics</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab"
+                    aria-controls="profile">Communication</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab"
+                    aria-controls="messages">Team Work</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab"
+                    aria-controls="settings">Goals</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    <p class="left-justify">
+                        Data collection and analysis is a key function of my job at State-Farm. We constently measure ourselves, and our fellow
+                        Team-mates to ensure that we are making and effective impact on the company. I also personally use Google Analytics to 
+                        assist a friend of mine with the status his email marketing, and funneling campaign which greatly improved his customers sales and public footprint.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    <p class="left-justify">
+                        Another great tool that I have learned at my time working for State-Farm is communication. Although we opperate as a individuals
+                        on the sales floor, interacting with one another and sharing information is crucial for making sure we are doing the job correctly.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    <p class="left-justify"> 
+                        Team-work definetly makes the dream work. All puns aside, being able to get along and cooperate with your fellow peers and leadership is a must.
+                        I have always been taught that the easiest and most effective way to complete a goal is to work and collaberate with others.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                    <p class="left-justify">
+                        From the very beginning of every project I do whether it be school related or for work, I always start off with a clear and achieveable goal in view.
+                        I find the most effective way to accomplish a goal is to modularize it into smaller sections; I will start off with a simple End-Goal and then break 
+                        it into smaller branches that are easier to visualize and help me succeed in the long run.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -110,6 +110,11 @@ a:hover, a:focus {
   }
 }
 
+.left-justify {
+  text-align: left;
+  justify-content: left;
+}
+
 .jumbotron {
   border-radius: 15px !important;
   width: 100%;
