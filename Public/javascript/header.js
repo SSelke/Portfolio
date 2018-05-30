@@ -6,7 +6,21 @@ $(document).ready(function () {
 });
 
 
-//Additional styling on collapsed navbar 
+//Additional styling on collapsed navbar
+
+var windowWidth = $(window).width();
+if (windowWidth < 992) {
+    $("hr.hidden").addClass("visible");
+    $("div.hidden").addClass("visible");
+    $("div.hidden").removeClass("hidden");
+}
+else {
+    $("div.hidden").removeClass("visible");
+    $("hr.visible").addClass("hidden");
+    $("div.visible").addClass("hidden");
+}
+
+
 $(window).resize(function () {
     var windowWidth = $(window).width();
     if (windowWidth < 992) {
