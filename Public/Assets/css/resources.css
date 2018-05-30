@@ -77,8 +77,13 @@ body {
 }
 
 .site-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 100%;
 }
 
@@ -116,7 +121,9 @@ a:hover, a:focus {
 }
 
 .title-container {
-  transform: translateY(-40px);
+  -webkit-transform: translateY(-40px);
+      -ms-transform: translateY(-40px);
+          transform: translateY(-40px);
 }
 
 .hidden {
@@ -171,7 +178,8 @@ a:hover, a:focus {
   margin-top: 24px;
   font-size: 48px;
   opacity: 1;
-  animation: 0.65s pull-left ease-in;
+  -webkit-animation: 0.65s pull-left ease-in;
+          animation: 0.65s pull-left ease-in;
 }
 
 .page-header-line {
@@ -179,7 +187,8 @@ a:hover, a:focus {
   height: 5px;
   background: #2a3b4e;
   margin: 10px auto;
-  animation: 0.65s pull-left ease-in;
+  -webkit-animation: 0.65s pull-left ease-in;
+          animation: 0.65s pull-left ease-in;
 }
 
 .head-container {
@@ -196,11 +205,9 @@ a:hover, a:focus {
   margin-right: auto;
   border: none !important;
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
   -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -216,11 +223,9 @@ a:hover, a:focus {
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
   -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
@@ -245,16 +250,14 @@ a:hover, a:focus {
 
 #nav-icon3.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 
 #nav-icon3.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
 }
 
 #nav-icon3.open span:nth-child(4) {
@@ -269,8 +272,6 @@ a:hover, a:focus {
   background: #1ba49c;
   margin: 24px auto;
   position: relative;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
   border-radius: 12px;
 }
 
@@ -292,8 +293,6 @@ a:hover, a:focus {
   background: #1ba49c;
   margin: 24px auto;
   position: relative;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
   border-radius: 12px;
 }
 
@@ -332,7 +331,8 @@ html {
 }
 
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
   min-height: 100%;
   height: 100%;
@@ -386,6 +386,15 @@ h6 {
   font-size: 14.4px;
 }
 
+@-webkit-keyframes pull-left {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes pull-left {
   0% {
     opacity: 0;
@@ -417,7 +426,9 @@ h1 {
 }
 
 .flex {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #push {
@@ -446,9 +457,15 @@ h1 {
   margin: 0 auto;
   margin-top: 24px;
   width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social {
@@ -459,10 +476,14 @@ h1 {
   border-radius: 50%;
   text-align: center;
   margin: 0 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .social:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
   background-color: #1ba49c;
 }
 
@@ -489,10 +510,11 @@ i {
 
 .skills {
   width: 100%;
-  max-width: 400px;
+  max-width: 398px;
   height: 750px;
   margin: 24px auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
 }
 
@@ -505,7 +527,7 @@ i {
   height: inherit;
   width: 2px;
   position: absolute;
-  background: rgba(238, 238, 238, 0.6);
+  background: rgba(0, 0, 0, 0.2);
 }
 .line.l--0 {
   left: 0;
@@ -554,13 +576,16 @@ i {
   margin: 0 0 10px;
   font-weight: bold;
   opacity: 0;
-  animation: 0.5s anim-lightspeed-in ease forwards;
+  -webkit-animation: 0.5s anim-lightspeed-in ease forwards;
+          animation: 0.5s anim-lightspeed-in ease forwards;
 }
 .chart--prod .chart__title {
-  animation-delay: 3.3s;
+  -webkit-animation-delay: 3.3s;
+          animation-delay: 3.3s;
 }
 .chart--design .chart__title {
-  animation-delay: 4.5s;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
 }
 
 .chart--horiz {
@@ -571,60 +596,80 @@ i {
 .chart__bar {
   height: 25px;
   margin-bottom: 10px;
+  background: -webkit-gradient(linear, right top, left top, from(#4cb8c4), to(#3cd3ad));
+  background: -webkit-linear-gradient(right, #4cb8c4, #3cd3ad);
+  background: -o-linear-gradient(right, #4cb8c4, #3cd3ad);
   background: linear-gradient(to left, #4cb8c4, #3cd3ad);
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   opacity: 0;
   background-position: 100% 0;
-  animation: 1s anim-lightspeed-in ease forwards;
+  -webkit-animation: 1s anim-lightspeed-in ease forwards;
+          animation: 1s anim-lightspeed-in ease forwards;
 }
 .chart--dev .chart__bar:nth-of-type(11) {
-  animation-delay: 2.7s;
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
 }
 .chart--dev .chart__bar:nth-of-type(10) {
-  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 .chart--dev .chart__bar:nth-of-type(9) {
-  animation-delay: 2.3s;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
 }
 .chart--dev .chart__bar:nth-of-type(8) {
-  animation-delay: 2.1s;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
 }
 .chart--dev .chart__bar:nth-of-type(7) {
-  animation-delay: 1.9s;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
 }
 .chart--dev .chart__bar:nth-of-type(6) {
-  animation-delay: 1.7s;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
 }
 .chart--dev .chart__bar:nth-of-type(5) {
-  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 .chart--dev .chart__bar:nth-of-type(4) {
-  animation-delay: 1.3s;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
 }
 .chart--dev .chart__bar:nth-of-type(3) {
-  animation-delay: 1.1s;
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
 }
 .chart--dev .chart__bar:nth-of-type(2) {
-  animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 .chart--dev .chart__bar:nth-of-type(1) {
-  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 .chart--prod .chart__bar:nth-of-type(2) {
-  animation-delay: 4.2s;
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
 }
 .chart--prod .chart__bar:nth-of-type(1) {
-  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 .chart--design .chart__bar:nth-of-type(3) {
-  animation-delay: 5.6s;
+  -webkit-animation-delay: 5.6s;
+          animation-delay: 5.6s;
 }
 .chart--design .chart__bar:nth-of-type(2) {
-  animation-delay: 5.4s;
+  -webkit-animation-delay: 5.4s;
+          animation-delay: 5.4s;
 }
 .chart--design .chart__bar:nth-of-type(1) {
-  animation-delay: 5.2s;
+  -webkit-animation-delay: 5.2s;
+          animation-delay: 5.2s;
 }
 
 .chart__label {
@@ -634,21 +679,49 @@ i {
 }
 
 .click--me {
-  animation: shake 0.9s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
-  animation-delay: 3s;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  -webkit-animation: shake 0.9s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+          animation: shake 0.9s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+@-webkit-keyframes anim-lightspeed-in {
+  0% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes anim-lightspeed-in {
   0% {
-    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
     opacity: 1;
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
+  }
+}
+@-webkit-keyframes light {
+  0% {
+    color: white;
+  }
+  50% {
+    color: yellow;
   }
 }
 @keyframes light {
@@ -657,6 +730,17 @@ i {
   }
   50% {
     color: yellow;
+  }
+}
+@-webkit-keyframes flame {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes flame {
@@ -679,11 +763,13 @@ i {
 }
 
 .light {
-  animation: 2s light ease-in-out infinite;
+  -webkit-animation: 2s light ease-in-out infinite;
+          animation: 2s light ease-in-out infinite;
 }
 
 .flame {
-  animation: 2s flame 300ms ease-in-out infinite;
+  -webkit-animation: 2s flame 300ms ease-in-out infinite;
+          animation: 2s flame 300ms ease-in-out infinite;
 }
 
 .resource-icon-two {
@@ -697,14 +783,18 @@ i {
 .resource-icon-shuttle {
   left: 30px;
   padding-top: 4px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   z-index: 1;
 }
 
 .resource-icon-fire {
   color: red;
   font-size: 35px;
-  transform: translate(-105px, 35px) rotate(-140deg);
+  -webkit-transform: translate(-105px, 35px) rotate(-140deg);
+      -ms-transform: translate(-105px, 35px) rotate(-140deg);
+          transform: translate(-105px, 35px) rotate(-140deg);
 }
 
 .resource-icon-toolbox {
@@ -727,5 +817,3 @@ i {
     margin-top: 80px;
   }
 }
-
-/*# sourceMappingURL=../Assets/css/resources.css.map */
